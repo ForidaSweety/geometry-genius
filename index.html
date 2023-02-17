@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment-5</title>
+    <script src="https://kit.fontawesome.com/6d6230c717.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
@@ -19,14 +20,74 @@
             </div>
            
             <div class="navbar-end">
-              <button class="btn">Blog</button>
+              <button id="btn-submit">Blog</button>
             </div>
           </div>
     </header>
     <main>
+        <section class="lg:px-12 flex flex-col md:flex-row lg:flex-row">
+            <div class="products-details w-[65%] mt-12 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- card-1 -->
+                <div class="card w-full bg-base-100 shadow-xl">
+                    <figure class="px-10 pt-10">
+                      <img src="images/triangle.png" alt="Triangle" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title">Triangle</h2>
+                      <p>Area (A) = 0.5 <i class="fa-solid fa-xmark"></i>b <i class="fa-solid fa-xmark"></i> h</p>
+                     <div>
+                        <input type="text" placeholder="b" class="input input-bordered input-xs w-[30%] max-w-xs" /> cm
+                        <input type="text" placeholder="h" class="input input-bordered input-xs w-[30%] max-w-xs" />cm
+                     </div>
+                      <div class="card-actions mt-6">
+                        <button class="btn btn-primary">Calculate</button>
+                      </div>
+                    </div>
+                </div>
+                <!-- card-2 -->
+                <div class="card w-full bg-base-100 shadow-xl">
+                    <figure class="px-10 pt-10">
+                      <img src="images/rectangle.png" alt="Rectangle" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title">Rectangle</h2>
+                      <p>Area (A) = w <i class="fa-solid fa-xmark"></i> I</p>
+                      <div>
+                        <input type="text" placeholder="w" class="input input-bordered input-xs w-[30%] max-w-xs" /> cm
+                        <input type="text" placeholder="l" class="input input-bordered input-xs w-[30%] max-w-xs" />cm
+                     </div>
+                      <div class="card-actions mt-6">
+                        <button class="btn btn-primary">Calculate</button>
+                      </div>
+                    </div>
+                </div>
+                <!-- card-3 -->
+                <div class="card w-full bg-base-100 shadow-xl">
+                    <figure class="px-10 pt-10">
+                      <img src="images/parallelogram.png" alt="Parallelogram" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title">Parallelogram</h2>
+                      <p>Area (A) = b <i class="fa-solid fa-xmark"></i> h</p>
+                      <div>
+                        <input type="text" placeholder="b" class="input input-bordered input-xs w-[30%] max-w-xs" /> cm
+                        <input type="text" placeholder="h" class="input input-bordered input-xs w-[30%] max-w-xs" />cm
+                     </div>
+                      <div class="card-actions mt-6">
+                        <button class="btn btn-primary">Calculate</button>
+                      </div>
+                    </div>
+                </div>
+               
+            </div>
 
+<!-- calculation part -->
+            <div class="cart-details w-full md:w-[35%] lg:w-[35%] mx-auto">
+                <h1 class="text-4xl text-center font-semibold underline mt-12">Area Calculation</h1>
+            </div>
+        </section>
     </main>
-    <script src="js/index.js"></script>
+    <script src="js/next.js"></script>
 
 </body>
 </html>
