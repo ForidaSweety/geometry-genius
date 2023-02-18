@@ -52,14 +52,14 @@
                       <img src="images/rectangle.png" alt="Rectangle" class="rounded-xl" />
                     </figure>
                     <div class="card-body items-center text-center">
-                      <h2 class="card-title">Rectangle</h2>
+                      <h2 id="second-name" class="card-title">Rectangle</h2>
                       <p>Area (A) = w <i class="fa-solid fa-xmark"></i> I</p>
                       <div>
-                        <input type="text" placeholder="w" class="input input-bordered input-xs w-[30%] max-w-xs" /> cm
-                        <input type="text" placeholder="l" class="input input-bordered input-xs w-[30%] max-w-xs" />cm
+                        <input id="recFirst-input" type="text" placeholder="w" class="input input-bordered input-xs w-[30%] max-w-xs" /> cm
+                        <input id="recSecond-input" type="text" placeholder="l" class="input input-bordered input-xs w-[30%] max-w-xs" />cm
                      </div>
                       <div class="card-actions mt-6">
-                        <button class="btn btn-primary">Calculate</button>
+                        <button id="second-card" class="btn btn-primary">Calculate</button>
                       </div>
                     </div>
                 </div>
@@ -69,14 +69,14 @@
                       <img src="images/parallelogram.png" alt="Parallelogram" class="rounded-xl" />
                     </figure>
                     <div class="card-body items-center text-center">
-                      <h2 class="card-title">Parallelogram</h2>
+                      <h2 id="third-name" class="card-title">Parallelogram</h2>
                       <p>Area (A) = b <i class="fa-solid fa-xmark"></i> h</p>
                       <div>
-                        <input type="text" placeholder="b" class="input input-bordered input-xs w-[30%] max-w-xs" /> cm
-                        <input type="text" placeholder="h" class="input input-bordered input-xs w-[30%] max-w-xs" />cm
+                        <input id="paraFirst-input" type="text" placeholder="b" class="input input-bordered input-xs w-[30%] max-w-xs" /> cm
+                        <input id="paraSecond-input" type="text" placeholder="h" class="input input-bordered input-xs w-[30%] max-w-xs" />cm
                      </div>
                       <div class="card-actions mt-6">
-                        <button class="btn btn-primary">Calculate</button>
+                        <button id="third-card" class="btn btn-primary">Calculate</button>
                       </div>
                     </div>
                 </div>
@@ -86,14 +86,14 @@
                       <img src="images/rhombus.png" alt="Rhombus" class="rounded-xl" />
                     </figure>
                     <div class="card-body items-center text-center">
-                      <h2 class="card-title">Rhombus</h2>
+                      <h2 id="fourth-name" class="card-title">Rhombus</h2>
                       <p>Area (A) = 0.5 <i class="fa-solid fa-xmark"></i> d1 <i class="fa-solid fa-xmark"></i> d2 </p>
                       <div>
-                        <input type="text" placeholder="d1" class="input input-bordered input-xs w-[30%] max-w-xs" /> cm
-                        <input type="text" placeholder="d2" class="input input-bordered input-xs w-[30%] max-w-xs" />cm
+                        <input id="rhomFirst-input" type="text" placeholder="d1" class="input input-bordered input-xs w-[30%] max-w-xs" /> cm
+                        <input id="rhomSecond-input" type="text" placeholder="d2" class="input input-bordered input-xs w-[30%] max-w-xs" />cm
                      </div>
                       <div class="card-actions mt-6">
-                        <button class="btn btn-primary">Calculate</button>
+                        <button id="fourth-card" class="btn btn-primary">Calculate</button>
                       </div>
                     </div>
                 </div>
@@ -103,15 +103,15 @@
                       <img src="images/pentagon.png" alt="Pentagon" class="rounded-xl" />
                     </figure>
                     <div class="card-body items-center text-center">
-                      <h2 class="card-title">Pentagon</h2>
+                      <h2 id="fifth-name" class="card-title">Pentagon</h2>
                       <p>Area (A) =
                         0.5 <i class="fa-solid fa-xmark"></i> p <i class="fa-solid fa-xmark"></i> b</p>
                         <div>
-                            <input type="text" placeholder="p" class="input input-bordered input-xs w-[30%] max-w-xs" /> cm
-                            <input type="text" placeholder="b" class="input input-bordered input-xs w-[30%] max-w-xs" />cm
+                            <input id="pentaFirst-input" type="text" placeholder="p" class="input input-bordered input-xs w-[30%] max-w-xs" /> cm
+                            <input id="pentaSecond-input" type="text" placeholder="b" class="input input-bordered input-xs w-[30%] max-w-xs" />cm
                          </div>
                       <div class="card-actions mt-6">
-                        <button class="btn btn-primary">Calculate</button>
+                        <button id="fifth-card" class="btn btn-primary">Calculate</button>
                       </div>
                     </div>
                 </div>
@@ -121,22 +121,31 @@
                       <img src="images/ellipse.png" alt="Ellipse" class="rounded-xl" />
                     </figure>
                     <div class="card-body items-center text-center">
-                      <h2 class="card-title">Ellipse</h2>
+                      <h2 id="end-name" class="card-title">Ellipse</h2>
                       <p class="flex">Area (A) = <img class="w-3 mr-1" src="images/pi-symbol-icon.svg" alt=""> a b</p>
                       <div>
-                        <input type="text" placeholder="a" class="input input-bordered input-xs w-[30%] max-w-xs" /> cm
-                        <input type="text" placeholder="b" class="input input-bordered input-xs w-[30%] max-w-xs mt-10 mb-2" />cm
+                        <input id="ellipFirst-input" type="text" placeholder="a" class="input input-bordered input-xs w-[30%] max-w-xs" /> cm
+                        <input id="ellipSecond-input" type="text" placeholder="b" class="input input-bordered input-xs w-[30%] max-w-xs mt-10 mb-2" />cm
                      </div>
                       <div class="card-actions mt-6">
-                        <button class="btn btn-primary">Calculate</button>
+                        <button id="last-card" class="btn btn-primary">Calculate</button>
                       </div>
                     </div>
                 </div>
             </div>
 
 <!-- calculation part -->
-            <div class="cart-details w-full md:w-[35%] lg:w-[35%] mx-auto">
+            <div class="cart-details ml-4 w-full md:w-[35%] lg:w-[35%] mx-auto">
                 <h1 class="text-4xl text-center font-semibold underline mt-12">Area Calculation</h1>
+                <table class="table w-full">
+                    <thead>
+        
+                    </thead>
+                    <tbody id="table-container">
+
+                    </tbody>
+
+                </table>
             </div>
         </section>
     </main>
