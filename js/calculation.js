@@ -49,6 +49,49 @@ document.getElementById('second-card').addEventListener('click',function(){
 
 })
 
+//3rd card
+
+document.getElementById('third-card').addEventListener('click',function(){
+    serial +=1;
+    // get the data using id
+    const geometryName = document.getElementById('third-name').innerText;
+    const geometryFirstValue = document.getElementById('paraFirst-input').value;
+    const geometrySecondValue = document.getElementById('paraSecond-input').value;
+
+    //calculation
+    const areaCal = parseFloat(geometryFirstValue) * parseFloat(geometrySecondValue);
+
+    //validation
+    if( isNaN(geometryFirstValue)||isNaN(geometrySecondValue)|| isNaN(geometryFirstValue && geometrySecondValue)||geometryFirstValue == ""||geometrySecondValue == ""|| geometryFirstValue <= 0 ||geometrySecondValue <= 0 ){
+        alert('please provide a valid number');
+        return;
+    }
+
+    displayData(geometryName,areaCal.toFixed(2));
+
+})
+//4th card
+
+document.getElementById('fourth-card').addEventListener('click',function(){
+    serial +=1;
+    // get the data using id
+    const geometryName = document.getElementById('fourth-name').innerText;
+    const geometryFirstValue = document.getElementById('rhomFirst-input').value;
+    const geometrySecondValue = document.getElementById('rhomSecond-input').value;
+
+    //calculation
+    const areaCal = 0.5 * parseFloat(geometryFirstValue) * parseFloat(geometrySecondValue);
+    //validation
+    if( isNaN(geometryFirstValue)||isNaN(geometrySecondValue)|| isNaN(geometryFirstValue && geometrySecondValue)||geometryFirstValue == ""||geometrySecondValue == ""|| geometryFirstValue <= 0 ||geometrySecondValue <= 0 ){
+        alert('please provide a valid number');
+        return;
+    }
+
+    displayData(geometryName,areaCal.toFixed(2));
+
+})
+
+
 
 // common function to display data
 function displayData(geometryName,areaCal){
@@ -65,8 +108,9 @@ function displayData(geometryName,areaCal){
 }
 
 
-/* document.getElementById('card-1').addEventListener('mouseover',function(){
-    getNewColor();
+//Random colour
+/* document.getElementById('first').addEventListener('mouseenter',function(){
+    document.body.style.background = getNewColor();
 })
 
 function getNewColor(){
@@ -76,5 +120,6 @@ function getNewColor(){
     for(let i = 0; i<6 ;i++){
         color = color + symbols[Math.floor(Math.random()*16)];
     }
-    document.main.style.background = color;
-} */
+    return color;
+}  */
+
