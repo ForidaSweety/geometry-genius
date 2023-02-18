@@ -90,7 +90,37 @@ document.getElementById('fourth-card').addEventListener('click',function(){
     displayData(geometryName,areaCal.toFixed(2));
 
 })
+//5th card
 
+document.getElementById('fifth-card').addEventListener('click',function(){
+    serial +=1;
+    // get the data using id
+    const geometryName = document.getElementById('fifth-name').innerText;
+    const geometryFirstValue = document.getElementById('pentaFirst-input').value;
+    const geometrySecondValue = document.getElementById('pentaSecond-input').value;
+
+    //calculation
+    const areaCal = 0.5 * parseFloat(geometryFirstValue) * parseFloat(geometrySecondValue);
+
+    displayData(geometryName,areaCal.toFixed(2));
+
+})
+//6th card
+
+document.getElementById('last-card').addEventListener('click',function(){
+    serial +=1;
+
+    // get the data using id
+    const geometryName = document.getElementById('end-name').innerText;
+    const geometryFirstValue = document.getElementById('ellipFirst-input').value;
+    const geometrySecondValue = document.getElementById('ellipSecond-input').value;
+
+    //calculation
+    const areaCal = 3.14 * parseFloat(geometryFirstValue) * parseFloat(geometrySecondValue);
+
+    displayData(geometryName,areaCal.toFixed(2));
+
+})
 
 
 // common function to display data
